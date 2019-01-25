@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:cb_backgroundColor="@color/colorAccent"
+            app:cb_radius="100" />
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:cb_backgroundColor="@color/btnBlue2"
+            app:cb_radius="100" />
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:cb_backgroundColor="@color/btnGreen"
+            app:cb_radius="100"
+            app:cb_strokeColor="@color/colorPrimaryDark"
+            app:cb_strokeWidth="0" />
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:cb_backgroundColor="@color/btnGreen"
+            app:cb_radius="100"
+            app:cb_strokeColor="@color/colorPrimary"
+            app:cb_strokeWidth="5" />
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:cb_backgroundColor="@color/btnGreen"
+            app:cb_radius="100"
+            app:cb_strokeColor="@color/colorPrimary"
+            app:cb_strokeDashGap="5"
+            app:cb_strokeDashWidth="90"
+            app:cb_strokeWidth="5" />
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:cb_backgroundColor="@color/btnBlue2"
+            app:cb_radius="15"
+            app:cb_strokeColor="@color/btnBlue2"
+            app:cb_strokeWidth="0" />
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:cb_backgroundColor="@color/btnBlue2"
+            app:cb_radius="15"
+            app:cb_strokeColor="@color/btnBlue2"
+            app:cb_strokeWidth="5" />
+
+        <com.manojbhadane.sample.CustomButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:cb_backgroundColor="@color/btnBlue2"
+            app:cb_radius="15"
+            app:cb_strokeColor="@color/btnBlue2"
+            app:cb_strokeDashGap="5"
+            app:cb_strokeDashWidth="90"
+            app:cb_strokeWidth="5" />
+
+    </LinearLayout>
+</ScrollView>
