@@ -13,7 +13,7 @@ An easy-to-use, customizable, Button for Android.
 
 # Download
 
-This library is available in **jCenter** which is the default Maven repository used in Android Studio.
+This library is available in **jitPack** which is the default Maven repository used in Android Studio.
 
 ## Gradle 
 **Step 1.** Add it in your root build.gradle at the end of repositories
