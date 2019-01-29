@@ -24,10 +24,10 @@ This library is available in **jCenter** which is the default Maven repository u
        android:layout_height="wrap_content"
        android:text="Hello World!"
        android:textColor="@android:color/white"
-       app:cb_backgroundColor="@color/green"
-       app:cb_radius="100"
-       app:cb_strokeColor="@color/darkGreen"
-       app:cb_strokeWidth="5" />
+       app:qb_backgroundColor="@color/green"
+       app:qb_radius="100"
+       app:qb_strokeColor="@color/darkGreen"
+       app:qb_strokeWidth="5" />
 ``` 
 
 
@@ -40,10 +40,10 @@ There are several customization options available which you can use to completel
 You can add some attributes to the PaymentCardView from your XML layout.
 
 ```xml
-app:cb_backgroundColor="@color/green"
-app:cb_radius="100"
-app:cb_strokeColor="@color/darkGreen"
-app:cb_strokeWidth="5"
+app:qb_backgroundColor="@color/green"
+app:qb_radius="100"
+app:qb_strokeColor="@color/darkGreen"
+app:qb_strokeWidth="5"
 ```
 
 ### JAVA (Programatically)
