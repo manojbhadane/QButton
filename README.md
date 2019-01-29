@@ -30,7 +30,7 @@ allprojects
 ```
 dependencies 
 {
-	implementation 'com.github.User:Repo:Tag'
+	  implementation 'com.github.manojbhadane:QButton:v1.0'
 }
 ```
 
