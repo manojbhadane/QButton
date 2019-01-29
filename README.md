@@ -7,6 +7,48 @@ An easy-to-use, customizable, Button for Android.
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/manojbhadane)
 <!---[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) -->
 
+# Download
+
+This library is available in **jCenter** which is the default Maven repository used in Android Studio.
+
+## Gradle 
+**Step 1.** Add it in your root build.gradle at the end of repositories
+
+**Step 2.** Add the dependency in your apps module build.gradle
+
+# Usage
+**XML**
+```xml
+<com.manojbhadane.QButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:cb_backgroundColor="@color/green"
+            app:cb_radius="100"
+            app:cb_strokeColor="@color/darkGreen"
+            app:cb_strokeWidth="5" />
+``` 
+
+# Customization
+
+There are several customization options available which you can use to completely change the look-and-feel and functionality of this view to match your needs.
+
+### XML (Quick and Easy)
+
+You can add some attributes to the PaymentCardView from your XML layout.
+
+```xml
+            app:cb_backgroundColor="@color/green"
+            app:cb_radius="100"
+            app:cb_strokeColor="@color/darkGreen"
+            app:cb_strokeWidth="5"
+```
+
+# Bugs or Requests
+
+If you encounter any problems feel free to open an [issue](https://github.com/manojbhadane/QButton/issues/new?assignees=&labels=&template=bug_report.md). If you feel the library is missing a feature, please raise a [ticket](https://github.com/manojbhadane/QButton/issues/new?assignees=&labels=&template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome. 
+
 
 # About The Author
 
