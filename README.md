@@ -20,15 +20,16 @@ This library is available in **jCenter** which is the default Maven repository u
 **XML**
 ```xml
 <com.manojbhadane.QButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/green"
-            app:cb_radius="100"
-            app:cb_strokeColor="@color/darkGreen"
-            app:cb_strokeWidth="5" />
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Hello World!"
+       android:textColor="@android:color/white"
+       app:cb_backgroundColor="@color/green"
+       app:cb_radius="100"
+       app:cb_strokeColor="@color/darkGreen"
+       app:cb_strokeWidth="5" />
 ``` 
+
 
 # Customization
 
@@ -39,10 +40,24 @@ There are several customization options available which you can use to completel
 You can add some attributes to the PaymentCardView from your XML layout.
 
 ```xml
-            app:cb_backgroundColor="@color/green"
-            app:cb_radius="100"
-            app:cb_strokeColor="@color/darkGreen"
-            app:cb_strokeWidth="5"
+app:cb_backgroundColor="@color/green"
+app:cb_radius="100"
+app:cb_strokeColor="@color/darkGreen"
+app:cb_strokeWidth="5"
+```
+
+### JAVA (Programatically)
+
+You can also programatically change the properties of the view, thereby having more control over it.
+
+```java
+qButton.setCornerRadious(5);
+qButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+
+qButton.setStrokeWidth(5);
+qButton.setStrokeDashGap(5);
+qButton.setStrokeDashWidth(90);
+qButton.setStrokeColor(getResources().getColor(R.color.colorPrimaryDark));
 ```
 
 # Bugs or Requests
