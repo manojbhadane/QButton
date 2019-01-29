@@ -1,4 +1,4 @@
-package com.manojbhadane.sample;
+package com.manojbhadane;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,31 +9,32 @@ import android.graphics.drawable.StateListDrawable;
 import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
 
+import com.manojbhadane.qbutton.R;
+
 /**
- * Created by manoj.bhadane on 24/01/19.
+ * Version Commit guide on Jitpack , execute follwing commands
+ * <p>
+ * git tag -a v1.2 -m "first commit"
+ * git push origin v1.2
+ *
+ *
  */
-public class CustomButton extends AppCompatButton {
+public class QButton extends AppCompatButton {
 
     private float mRadius, mStrokeDashWidth, mStrokeDashGap;
     private int mStrokeColor = 0, mStrokeWidth, mBackgroundColor;
 
-    public CustomButton(Context context, AttributeSet attrs) {
+    public QButton(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-//        LayoutInflater mInflater = LayoutInflater.from(context);
-
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomButton);
-        mBackgroundColor = a.getColor(R.styleable.CustomButton_cb_backgroundColor, getResources().getColor(R.color.colorPrimary));
-        mRadius = a.getFloat(R.styleable.CustomButton_cb_radius, 100f);
-        mStrokeDashGap = a.getFloat(R.styleable.CustomButton_cb_strokeDashGap, 0);
-        mStrokeDashWidth = a.getFloat(R.styleable.CustomButton_cb_strokeDashWidth, 0);
-        mStrokeWidth = a.getInt(R.styleable.CustomButton_cb_strokeWidth, 0);
-        mStrokeColor = a.getColor(R.styleable.CustomButton_cb_strokeColor, mBackgroundColor);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.QButton);
+        mBackgroundColor = a.getColor(R.styleable.QButton_cb_backgroundColor, getResources().getColor(R.color.colorPrimary));
+        mRadius = a.getFloat(R.styleable.QButton_cb_radius, 100f);
+        mStrokeDashGap = a.getFloat(R.styleable.QButton_cb_strokeDashGap, 0);
+        mStrokeDashWidth = a.getFloat(R.styleable.QButton_cb_strokeDashWidth, 0);
+        mStrokeWidth = a.getInt(R.styleable.QButton_cb_strokeWidth, 0);
+        mStrokeColor = a.getColor(R.styleable.QButton_cb_strokeColor, mBackgroundColor);
         a.recycle();
-
-//        View v = mInflater.inflate(R.layout.layout_item_result, this, true);
-
-//        setBackground(getDrawable(mBackgroundColor, mRadius));
 
 //        TypedArray a1 = getContext().obtainStyledAttributes(new int[]{android.R.attr.selectableItemBackground});
 //        Drawable mForegroundDrawable = a1.getDrawable(0);
@@ -51,17 +52,10 @@ public class CustomButton extends AppCompatButton {
         states.addState(new int[]{}, normal);
         setBackground(states);
 
-//        TypedValue outValue = new TypedValue();
-//        getContext().getTheme().resolveAttribute(android.R.attr.selectableItemBackground, outValue, true);
-////        setBackgroundResource(getDrawable(context, outValue.resourceId));
-//        setForeground(outValue.resourceId);
-
     }
 
     public GradientDrawable getDrawable1(int backgroundColor, float radius) {
 
-//        int colors[] = {getResources().getColor(R.color.btnGreen),
-//                manipulateColor(getResources().getColor(R.color.btnGreen), 0.8f)};
         int colors[] = {backgroundColor,
                 manipulateColor(backgroundColor, 0.8f)};
 
@@ -73,12 +67,10 @@ public class CustomButton extends AppCompatButton {
         shape.setGradientType(GradientDrawable.LINEAR_GRADIENT);
 
         shape.setStroke(mStrokeWidth, mStrokeColor);
-//        shape.setStroke(mStrokeWidth, mStrokeColor, mStrokeDashWidth, mStrokeDashGap);
         if (mStrokeDashGap > 0 || mStrokeDashWidth > 0) {
             shape.setStroke(mStrokeWidth, mStrokeColor, mStrokeDashWidth, mStrokeDashGap);
         }
 
-//        v.setBackground(shape);
         return shape;
     }
 

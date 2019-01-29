@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="QButton">
+        <attr name="cb_backgroundColor" format="color" />
+        <attr name="cb_radius" format="float" />
+        <attr name="cb_strokeColor" format="color" />
+        <attr name="cb_strokeWidth" format="integer" />
+        <attr name="cb_strokeDashWidth" format="float" />
+        <attr name="cb_strokeDashGap" format="float" />
+    </declare-styleable>
+
+</resources>
