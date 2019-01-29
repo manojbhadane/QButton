@@ -1,5 +1,8 @@
+![enter image description here](https://raw.githubusercontent.com/manojbhadane/QButton/master/qbutton_banner.png?token=AKPddlQNgRZT1DbSR_pBUSw70a1Yrrzcks5cUIfvwA%3D%3D)
+
 # QButton
 An easy-to-use, customizable, Button for Android.
+
 
 ### Specs
 [![API](https://img.shields.io/badge/API-15%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=15) 
@@ -13,8 +16,23 @@ This library is available in **jCenter** which is the default Maven repository u
 
 ## Gradle 
 **Step 1.** Add it in your root build.gradle at the end of repositories
+```
+allprojects 
+{
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
 
 **Step 2.** Add the dependency in your apps module build.gradle
+```
+dependencies 
+{
+	implementation 'com.github.User:Repo:Tag'
+}
+```
 
 # Usage
 **XML**
