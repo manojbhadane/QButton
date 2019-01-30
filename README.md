@@ -1,4 +1,4 @@
-![enter image description here](https://raw.githubusercontent.com/manojbhadane/QButton/master/qbutton_banner.png?token=AKPddlQNgRZT1DbSR_pBUSw70a1Yrrzcks5cUIfvwA%3D%3D)
+![enter image description here](https://raw.githubusercontent.com/manojbhadane/QButton/master/qbuttonbanner.png?token=AKPddlQNgRZT1DbSR_pBUSw70a1Yrrzcks5cUIfvwA%3D%3D)
 
 # QButton
 An easy-to-use, customizable, Button for Android.
