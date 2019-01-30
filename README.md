@@ -45,6 +45,7 @@ dependencies
 <com.manojbhadane.QButton
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+       android:layout_margin="10dp"
        android:text="Hello World!"
        android:textColor="@android:color/white"
        app:qb_backgroundColor="@color/green"
