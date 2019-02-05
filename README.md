@@ -1,11 +1,92 @@
+![enter image description here](https://raw.githubusercontent.com/manojbhadane/QButton/master/qbuttonbanner.png?token=AKPddlQNgRZT1DbSR_pBUSw70a1Yrrzcks5cUIfvwA%3D%3D)
+
 # QButton
 An easy-to-use, customizable, Button for Android.
 
+
 ### Specs
+<!---[![](https://jitpack.io/v/manojbhadane/QButton.svg)](https://jitpack.io/#manojbhadane/QButton)-->
 [![API](https://img.shields.io/badge/API-15%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=15) 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Payment%20Card%20View-brightgreen.svg?style=plastic)](https://android-arsenal.com/details/1/7417)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-QButton-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7506)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/manojbhadane)
 <!---[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) -->
+
+# Download
+
+This library is available in **jitPack** which is the default Maven repository used in Android Studio.
+
+## Gradle 
+**Step 1.** Add it in your root build.gradle at the end of repositories
+```
+allprojects 
+{
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+**Step 2.** Add the dependency in your apps module build.gradle
+```
+dependencies 
+{
+	  implementation 'com.github.manojbhadane:QButton:v1.0'
+}
+```
+
+### Spread Some :heart:
+[![GitHub followers](https://img.shields.io/github/followers/manojbhadane.svg?style=social&label=Follow)](https://github.com/manojbhadane)  [![Twitter Follow](https://img.shields.io/twitter/follow/manojbhadane.svg?style=social)](https://twitter.com/Manoj_bhadane) 
+
+
+# Usage
+**XML**
+```xml
+<com.manojbhadane.QButton
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:text="Hello World!"
+       android:textColor="@android:color/white"
+       app:qb_backgroundColor="@color/green"
+       app:qb_radius="100"
+       app:qb_strokeColor="@color/darkGreen"
+       app:qb_strokeWidth="5" />
+``` 
+
+
+# Customization
+
+There are several customization options available which you can use to completely change the look-and-feel and functionality of this view to match your needs.
+
+### XML (Quick and Easy)
+
+You can add some attributes to the PaymentCardView from your XML layout.
+
+```xml
+app:qb_backgroundColor="@color/green"
+app:qb_radius="100"
+app:qb_strokeColor="@color/darkGreen"
+app:qb_strokeWidth="5"
+```
+
+### JAVA (Programatically)
+
+You can also programatically change the properties of the view, thereby having more control over it.
+
+```java
+qButton.setCornerRadious(5);
+qButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+
+qButton.setStrokeWidth(5);
+qButton.setStrokeDashGap(5);
+qButton.setStrokeDashWidth(90);
+qButton.setStrokeColor(getResources().getColor(R.color.colorPrimaryDark));
+```
+
+# Bugs or Requests
+
+If you encounter any problems feel free to open an [issue](https://github.com/manojbhadane/QButton/issues/new?assignees=&labels=&template=bug_report.md). If you feel the library is missing a feature, please raise a [ticket](https://github.com/manojbhadane/QButton/issues/new?assignees=&labels=&template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome. 
 
 
 # About The Author
