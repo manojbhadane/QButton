@@ -2,12 +2,12 @@
 <resources>
 
     <declare-styleable name="QButton">
-        <attr name="cb_backgroundColor" format="color" />
-        <attr name="cb_radius" format="float" />
-        <attr name="cb_strokeColor" format="color" />
-        <attr name="cb_strokeWidth" format="integer" />
-        <attr name="cb_strokeDashWidth" format="float" />
-        <attr name="cb_strokeDashGap" format="float" />
+        <attr name="qb_backgroundColor" format="color" />
+        <attr name="qb_radius" format="integer" />
+        <attr name="qb_strokeColor" format="color" />
+        <attr name="qb_strokeWidth" format="integer" />
+        <attr name="qb_strokeDashWidth" format="integer" />
+        <attr name="qb_strokeDashGap" format="integer" />
     </declare-styleable>
 
 </resources>

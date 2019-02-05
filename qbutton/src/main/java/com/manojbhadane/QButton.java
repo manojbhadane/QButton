@@ -16,29 +16,33 @@ import com.manojbhadane.qbutton.R;
  * <p>
  * git tag -a v1.2 -m "first commit"
  * git push origin v1.2
- *
- *
  */
 public class QButton extends AppCompatButton {
 
-    private float mRadius, mStrokeDashWidth, mStrokeDashGap;
+    private int mRadius;
+    private int mStrokeDashWidth, mStrokeDashGap;
     private int mStrokeColor = 0, mStrokeWidth, mBackgroundColor;
 
     public QButton(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.QButton);
-        mBackgroundColor = a.getColor(R.styleable.QButton_cb_backgroundColor, getResources().getColor(R.color.colorPrimary));
-        mRadius = a.getFloat(R.styleable.QButton_cb_radius, 100f);
-        mStrokeDashGap = a.getFloat(R.styleable.QButton_cb_strokeDashGap, 0);
-        mStrokeDashWidth = a.getFloat(R.styleable.QButton_cb_strokeDashWidth, 0);
-        mStrokeWidth = a.getInt(R.styleable.QButton_cb_strokeWidth, 0);
-        mStrokeColor = a.getColor(R.styleable.QButton_cb_strokeColor, mBackgroundColor);
+        mBackgroundColor = a.getColor(R.styleable.QButton_qb_backgroundColor, getResources().getColor(R.color.colorPrimary));
+        mRadius = a.getInt(R.styleable.QButton_qb_radius, 100);
+        mStrokeDashGap = a.getInt(R.styleable.QButton_qb_strokeDashGap, 0);
+        mStrokeDashWidth = a.getInt(R.styleable.QButton_qb_strokeDashWidth, 0);
+        mStrokeWidth = a.getInt(R.styleable.QButton_qb_strokeWidth, 0);
+        mStrokeColor = a.getColor(R.styleable.QButton_qb_strokeColor, mBackgroundColor);
         a.recycle();
 
 //        TypedArray a1 = getContext().obtainStyledAttributes(new int[]{android.R.attr.selectableItemBackground});
 //        Drawable mForegroundDrawable = a1.getDrawable(0);
 //        setForeground(mForegroundDrawable);
+
+        notifyChanges();
+    }
+
+    private void notifyChanges() {
 
         if (mStrokeColor == 0) {
             mStrokeColor = manipulateColor(mBackgroundColor, 0.9f);
@@ -84,5 +88,35 @@ public class QButton extends AppCompatButton {
                 Math.min(r, 255),
                 Math.min(g, 255),
                 Math.min(b, 255));
+    }
+
+    public void setBackgroundColor(int backgroundColor) {
+        mBackgroundColor = backgroundColor;
+        notifyChanges();
+    }
+
+    public void setCornerRadious(int cornerRadious) {
+        mRadius = cornerRadious;
+        notifyChanges();
+    }
+
+    public void setStrokeDashGap(int strokeDashGap) {
+        mStrokeDashGap = strokeDashGap;
+        notifyChanges();
+    }
+
+    public void setStrokeDashWidth(int strokeDashWidth) {
+        mStrokeDashWidth = strokeDashWidth;
+        notifyChanges();
+    }
+
+    public void setStrokeColor(int strokeColor) {
+        mStrokeColor = strokeColor;
+        notifyChanges();
+    }
+
+    public void setStrokeWidth(int strokeWidth) {
+        mStrokeWidth = strokeWidth;
+        notifyChanges();
     }
 }

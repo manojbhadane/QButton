@@ -23,8 +23,8 @@
             android:text="Hello World!"
             android:textColor="@android:color/white"
             android:visibility="gone"
-            app:cb_backgroundColor="@color/colorAccent"
-            app:cb_radius="100" />
+            app:qb_backgroundColor="@color/colorAccent"
+            app:qb_radius="100" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -33,8 +33,20 @@
             android:text="Hello World!"
             android:textColor="@android:color/white"
             android:visibility="gone"
-            app:cb_backgroundColor="@color/btnBlue2"
-            app:cb_radius="100" />
+            app:qb_backgroundColor="@color/btnBlue2"
+            app:qb_radius="100" />
+
+        <com.manojbhadane.QButton
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hello World!"
+            android:textColor="@android:color/white"
+            app:qb_backgroundColor="@color/btnGreen"
+            app:qb_radius="100"
+            app:qb_strokeColor="@color/colorPrimaryDark"
+            app:qb_strokeWidth="0" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -42,10 +54,10 @@
             android:layout_margin="10dp"
             android:text="Hello World!"
             android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/btnGreen"
-            app:cb_radius="100"
-            app:cb_strokeColor="@color/colorPrimaryDark"
-            app:cb_strokeWidth="0" />
+            app:qb_backgroundColor="@color/btnGreen"
+            app:qb_radius="100"
+            app:qb_strokeColor="@color/colorPrimary"
+            app:qb_strokeWidth="5" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -53,10 +65,12 @@
             android:layout_margin="10dp"
             android:text="Hello World!"
             android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/btnGreen"
-            app:cb_radius="100"
-            app:cb_strokeColor="@color/colorPrimary"
-            app:cb_strokeWidth="5" />
+            app:qb_backgroundColor="@color/btnGreen"
+            app:qb_radius="100"
+            app:qb_strokeColor="@color/colorPrimary"
+            app:qb_strokeDashGap="5"
+            app:qb_strokeDashWidth="90"
+            app:qb_strokeWidth="5" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -64,12 +78,10 @@
             android:layout_margin="10dp"
             android:text="Hello World!"
             android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/btnGreen"
-            app:cb_radius="100"
-            app:cb_strokeColor="@color/colorPrimary"
-            app:cb_strokeDashGap="5"
-            app:cb_strokeDashWidth="90"
-            app:cb_strokeWidth="5" />
+            app:qb_backgroundColor="@color/btnBlue2"
+            app:qb_radius="15"
+            app:qb_strokeColor="@color/btnBlue2"
+            app:qb_strokeWidth="0" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -77,10 +89,10 @@
             android:layout_margin="10dp"
             android:text="Hello World!"
             android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/btnBlue2"
-            app:cb_radius="15"
-            app:cb_strokeColor="@color/btnBlue2"
-            app:cb_strokeWidth="0" />
+            app:qb_backgroundColor="@color/btnBlue2"
+            app:qb_radius="15"
+            app:qb_strokeColor="@color/btnGreen"
+            app:qb_strokeWidth="5" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -88,10 +100,12 @@
             android:layout_margin="10dp"
             android:text="Hello World!"
             android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/btnBlue2"
-            app:cb_radius="15"
-            app:cb_strokeColor="@color/btnGreen"
-            app:cb_strokeWidth="5" />
+            app:qb_backgroundColor="@color/btnBlue2"
+            app:qb_radius="15"
+            app:qb_strokeColor="@color/btnBlue2"
+            app:qb_strokeDashGap="5"
+            app:qb_strokeDashWidth="90"
+            app:qb_strokeWidth="5" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -99,12 +113,8 @@
             android:layout_margin="10dp"
             android:text="Hello World!"
             android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/btnBlue2"
-            app:cb_radius="15"
-            app:cb_strokeColor="@color/btnBlue2"
-            app:cb_strokeDashGap="5"
-            app:cb_strokeDashWidth="90"
-            app:cb_strokeWidth="5" />
+            app:qb_backgroundColor="@color/colorAccent"
+            app:qb_radius="35" />
 
         <com.manojbhadane.QButton
             android:layout_width="match_parent"
@@ -112,17 +122,8 @@
             android:layout_margin="10dp"
             android:text="Hello World!"
             android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/colorAccent"
-            app:cb_radius="35" />
-
-        <com.manojbhadane.QButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Hello World!"
-            android:textColor="@android:color/white"
-            app:cb_backgroundColor="@color/colorAccent"
-            app:cb_radius="45" />
+            app:qb_backgroundColor="@color/colorAccent"
+            app:qb_radius="45" />
 
     </LinearLayout>
 </ScrollView>
