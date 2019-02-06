@@ -19,6 +19,7 @@ import com.manojbhadane.qbutton.R;
  */
 public class QButton extends AppCompatButton {
 
+    private boolean isEnable = true;
     private int mRadius;
     private int mStrokeDashWidth, mStrokeDashGap;
     private int mStrokeColor = 0, mStrokeWidth, mBackgroundColor;
@@ -42,13 +43,27 @@ public class QButton extends AppCompatButton {
         notifyChanges();
     }
 
+    @Override
+    public void setEnabled(boolean enabled) {
+        isEnable = enabled;
+        notifyChanges();
+        super.setEnabled(enabled);
+    }
+
     private void notifyChanges() {
 
-        if (mStrokeColor == 0) {
-            mStrokeColor = manipulateColor(mBackgroundColor, 0.9f);
+        Float factor = 0.8f, factorStorke = 0.9f;
+
+        if (!isEnable) {
+            //handling for button disable state
+            setAlpha(0.6f);
         }
 
-        Drawable pressed = getDrawable1(manipulateColor(mBackgroundColor, 0.8f), mRadius);
+        if (mStrokeColor == 0) {
+            mStrokeColor = manipulateColor(mBackgroundColor, factorStorke);
+        }
+
+        Drawable pressed = getDrawable1(manipulateColor(mBackgroundColor, factor), mRadius);
         Drawable normal = getDrawable1(mBackgroundColor, mRadius);
 
         StateListDrawable states = new StateListDrawable();

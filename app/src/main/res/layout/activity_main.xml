@@ -55,6 +55,7 @@
             android:text="Hello World!"
             android:textColor="@android:color/white"
             app:qb_backgroundColor="@color/btnGreen"
+            android:enabled="true"
             app:qb_radius="100"
             app:qb_strokeColor="@color/colorPrimary"
             app:qb_strokeWidth="5" />
@@ -64,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Hello World!"
+            android:enabled="false"
             android:textColor="@android:color/white"
             app:qb_backgroundColor="@color/btnGreen"
             app:qb_radius="100"
