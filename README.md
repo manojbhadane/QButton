@@ -31,7 +31,7 @@ allprojects
 ```
 dependencies 
 {
-	  implementation 'com.github.manojbhadane:QButton:v1.1'
+	  implementation 'com.github.manojbhadane:QButton:v1.3'
 }
 ```
 
