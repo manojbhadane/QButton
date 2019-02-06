@@ -61,7 +61,7 @@ There are several customization options available which you can use to completel
 
 ### XML (Quick and Easy)
 
-You can add some attributes to the PaymentCardView from your XML layout.
+You can add some attributes to the QButton from your XML layout.
 
 ```xml
 app:qb_backgroundColor="@color/green"
