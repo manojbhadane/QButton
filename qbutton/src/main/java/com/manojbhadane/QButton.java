@@ -36,8 +36,8 @@ public class QButton extends AppCompatButton {
         mStrokeColor = a.getColor(R.styleable.QButton_qb_strokeColor, mBackgroundColor);
         a.recycle();
 
-        TypedArray a1 = getContext().obtainStyledAttributes(new int[]{android.R.attr.selectableItemBackground});
-        Drawable mForegroundDrawable = a1.getDrawable(0);
+//        TypedArray a1 = getContext().obtainStyledAttributes(new int[]{android.R.attr.selectableItemBackground});
+//        Drawable mForegroundDrawable = a1.getDrawable(0);
 //        setForeground(mForegroundDrawable);
 
         notifyChanges();
